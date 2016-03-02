@@ -1,1 +1,134 @@
-<h1>Crown and Caliber Big Board</h1>
+<div class="row wrapper border-bottom white-bg page-heading">
+    <h1>Crown and Caliber | Big Board</h1>
+    <h4><%= @report_date.strftime("As of: %m/%d/%Y") %></h4>
+</div>
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <!--<h4 class="text-center m">-->
+                <!--    Basic example of slick carousel-->
+                <!--</h4>-->
+                <div class="slick_demo_1">
+                    <div>
+                        <div class="ibox-content">
+                            <h2>General Info</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ibox-content">
+                            <h2>Marketing</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ibox-content">
+                            <h2>Emails</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ibox-content">
+                            <h2>Procurement</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap.
+                            </p>
+                        </div>
+                    </div>
+                    <!--<div>-->
+                    <!--    <div class="ibox-content">-->
+                    <!--        <h2>Operations</h2>-->
+                    <!--        <p>-->
+                    <!--            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem-->
+                    <!--            Ipsum has been the industry's standard dummy text ever since the 1500s, when an-->
+                    <!--            unknown printer took a galley of type and scrambled it to make a type specimen-->
+                    <!--            book. It has survived not only five centuries, but also the leap.-->
+                    <!--        </p>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <div>
+                        <div class="ibox-content">
+                            <h2>Partner</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ibox-content">
+                            <h2>This Months Birthdays and Anniversaries</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ibox-content">
+                            <h2>Instagram</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ibox-content">
+                            <h2>Twitter</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% content_for :javascript do %>
+
+<script>
+
+$(function() {
+
+    $('.slick_demo_1').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 30000,
+        speed: 1000,
+    });
+});
+
+</script>
+
+<% end %>
