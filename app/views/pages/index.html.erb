@@ -1,6 +1,6 @@
 <div class="row wrapper border-bottom white-bg page-heading">
-    <h1>Crown and Caliber | Big Board</h1>
-    <h4><%= @report_date.strftime("As of: %m/%d/%Y") %></h4>
+    <h1 class="text-center m">Crown and Caliber | Big Board</h1>
+    <h4 class="text-center m"><%= @report_date.strftime("As of: %m/%d/%Y") %></h4>
 </div>
 <div class="wrapper wrapper-content">
     <div class="row">
@@ -9,7 +9,7 @@
                 <!--<h4 class="text-center m">-->
                 <!--    Basic example of slick carousel-->
                 <!--</h4>-->
-                <div class="slick_demo_1">
+                <div class="slick_slider">
                     <div>
                         <div class="ibox-content">
                             <h2>General Info</h2>
@@ -78,7 +78,7 @@
                     </div>
                     <div>
                         <div class="ibox-content">
-                            <h2>This Months Birthdays and Anniversaries</h2>
+                            <h2>This Month's Birthdays and Anniversaries</h2>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an
@@ -105,6 +105,12 @@
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                 unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen
                                 book. It has survived not only five centuries, but also the leap.
                             </p>
                         </div>
@@ -121,11 +127,12 @@
 
 $(function() {
 
-    $('.slick_demo_1').slick({
+    $('.slick_slider').slick({
         dots: true,
         autoplay: true,
         autoplaySpeed: 30000,
         speed: 1000,
+        adaptiveHeight: true,
     });
 });
 
