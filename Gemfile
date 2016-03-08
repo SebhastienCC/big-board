@@ -29,6 +29,9 @@ gem 'font-awesome-rails', '~> 4.5', '>= 4.5.0.1'
 # Use Bootstrap for page styling
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
+# Use Googel Drive Gem to access Google Drive
+gem 'google_drive', '~> 1.0', '>= 1.0.6'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

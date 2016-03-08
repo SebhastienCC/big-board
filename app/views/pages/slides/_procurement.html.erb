@@ -17,7 +17,7 @@
 <div class="row">
     <div class="col-lg-6">
         <div class="text-center">
-            <h3>Win Rate<small>  (Budget: 28.0%)</small></h3>
+            <h3>Win Rate<small>  (Budget: <%= @win_rate_budget %>)</small></h3>
         </div>
         <div id="gauge"></div>
     </div>
@@ -25,7 +25,7 @@
         <div class="text-center">
             <h3>Delivery per Person</h3>
         </div>
-        <h2>10</h2>
+        <h2><%= @delivery %></h2> <small>Budget: <%= @delivery_budget %></small>
         <div id="sparkline1"></div>
     </div>
 </div>

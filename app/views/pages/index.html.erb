@@ -306,7 +306,7 @@ $(function() {
         bindto: '#gauge',
         data:{
             columns: [
-                ['Win Rate', 23.56]
+                ['Win Rate', <%= @win_rate %>]
             ],
 
             type: 'gauge'
@@ -335,8 +335,8 @@ $(function() {
         bindto: '#slineChart3',
         data:{
             columns: [
-                ['Actual', 0, 5080, 15036, 19108, 24885, 24885, 24885, 36372],
-                ['Budget', 0, 12255, 24510, 36765, 49020, 61275, 73530, 85785 ]
+                ['Actual', 0, 8,	417,	4079,	6866,	8193,	9479,	10588],
+                ['Budget', 0, 9947,	19893,	29840,	39787,	49734,	59680,	69627 ]
             ],
             colors:{
                 Actual: '#ff5a00',
@@ -358,8 +358,8 @@ $(function() {
         bindto: '#slineChart4',
         data:{
             columns: [
-                ['Actual', 0, 5080, 15036, 19108, 24885, 24885, 24885, 36372],
-                ['Budget', 0, 12255, 24510, 36765, 49020, 61275, 73530, 85785 ]
+                ['Actual', 3956, 4007 ,3981, 3955, 3948, 3969, 3947, 3934 ],
+                ['Budget', 3956, 4163 ,4371 ,4578, 4786, 4993, 5201, 5408  ]
             ],
             colors:{
                 Actual: '#ff5a00',
@@ -370,30 +370,7 @@ $(function() {
         axis: {
           y: {
             tick: {
-              format: d3.format('$,')
-              //or format: function (d) { return '$' + d; }
-            }
-          }
-        }
-    });
-    
-     c3.generate({
-        bindto: '#slineChart5',
-        data:{
-            columns: [
-                ['Actual', 0, 5080, 15036, 19108, 24885, 24885, 24885, 36372],
-                ['Budget', 0, 12255, 24510, 36765, 49020, 61275, 73530, 85785 ]
-            ],
-            colors:{
-                Actual: '#ff5a00',
-                Budget: '#9b9b9b'
-            },
-            type: 'spline'
-        },
-        axis: {
-          y: {
-            tick: {
-              format: d3.format('$,')
+              format: d3.format(',')
               //or format: function (d) { return '$' + d; }
             }
           }

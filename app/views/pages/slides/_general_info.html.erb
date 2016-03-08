@@ -3,8 +3,8 @@
     <div class="col-lg-12">
         <div class="text-center">
             <!--<h2><span class="label label-primary">MTD: $75,818</span></h2>-->
-            <button type="button" class="btn btn-primary btn-lg">MTD: $75,818</button>
-            <button type="button" class="btn btn-gray btn-lg">Budget: $108,332</button>
+            <button type="button" class="btn btn-primary btn-lg">MTD: $<%= number_with_delimiter(@net) %></button>
+            <button type="button" class="btn btn-gray btn-lg">Budget: $<%= number_with_delimiter(@net_budget) %></button>
         </div>
         <div class="col-lg-12">
             <h3>Net Revenue</h3>
