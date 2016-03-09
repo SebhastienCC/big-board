@@ -6,7 +6,7 @@ class PagesController < ApplicationController
         ws = session.spreadsheet_by_key("1S-eHfucFkQZGqd-GvLhjTE2g4FwWVOMbZq9SCQ86z-k").worksheets[0]
         
         # Gets content of A2 cell.
-        @report_date = Date.today - 2
+        @report_date = Date.today - 1
         # List of queries
         
         # Marketing

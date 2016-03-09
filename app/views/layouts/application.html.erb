@@ -19,6 +19,9 @@
     <p class="alert"><%= alert %></p>
   <% end %>
   <%= yield %>
+  <div class="text-right">
+    <small><%= Time.zone.now.strftime("Last Updated at %l:%M %P") %></small>
+  </div>
 </div>
 
     <!-- Include javascript per-view -->
