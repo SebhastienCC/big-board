@@ -1,11 +1,12 @@
 class PagesController < ApplicationController
+    before_action :authenticate_user!
     def index
         session = GoogleDrive.saved_session("config.json")
         
         ws = session.spreadsheet_by_key("1S-eHfucFkQZGqd-GvLhjTE2g4FwWVOMbZq9SCQ86z-k").worksheets[0]
         
         # Gets content of A2 cell.
-        @report_date = Date.today - 1
+        @report_date = Date.today - 2
         # List of queries
         
         # Marketing
