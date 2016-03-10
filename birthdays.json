@@ -1,0 +1,26 @@
+[
+{
+    "first_name": "Jason",
+    "last_name": "Andrews",
+    "birthday": "03/10/00",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/jason.jpg"
+},
+{
+    "first_name": "Sebhastien",
+    "last_name": "Gibosse",
+    "birthday": "03/13/00",
+    "image": "http://794d4d309e11ee258865-86029e839b20c2d1f19152b1237ad2a6.r98.cf5.rackcdn.com/sebhastian.jpg"
+},
+{
+    "first_name": "Margaret",
+    "last_name": "Flores",
+    "birthday": "03/31/00",
+    "image":"https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/margaret.jpg"
+},
+{
+    "first_name": "Ryan",
+    "last_name": "Roberts",
+    "birthday": "04/03/00",
+    "image":"https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/ryan.jpg"
+}
+]

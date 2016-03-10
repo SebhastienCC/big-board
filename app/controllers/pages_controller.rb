@@ -41,21 +41,35 @@ class PagesController < ApplicationController
         
         @days_passed = @report_date.strftime("%d").to_i
         
-        @array_for_line_chart = []
+        # start_date = Date.today.beginning_of_month
         
-        days = 31
-        chart_range = 7
-        budget = 479758
-        todays_budget = 0
-        average = budget/days
         
-        chart_range.times do |i|
-            todays_budget += average
+        @nr_actual = []
+        @nr_budget = []
+        
+        # chart_range.times do |i|
             
-            i = todays_budget
-            @array_for_line_chart.push(i)
+        # end
+        
+        @this_months_birthdays = {}
+        
+        def find_birthdays
+            list = JSON.parse(File.read('birthdays.json'))
+            
+            list.each do |l|
+                
+                birthday_check = Date.strptime(l["birthday"],"%m/%d/%y")
+                
+                if Date.today.strftime("%m") == birthday_check.strftime("%m")
+                    @this_months_birthdays[l] = {}
+                    @this_months_birthdays[l]["birthday"] = Date.strptime(l["birthday"],"%m/%d/%y")
+                    
+                end
+            end
+                
         end
         
+        find_birthdays
         
     end
 end
