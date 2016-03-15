@@ -3,7 +3,8 @@ class PagesController < ApplicationController
     def index
         session = GoogleDrive.saved_session("config.json")
         
-        ws = session.spreadsheet_by_key("1S-eHfucFkQZGqd-GvLhjTE2g4FwWVOMbZq9SCQ86z-k").worksheets[0]
+        ws = session.spreadsheet_by_key("1S-eHfucFkQZGqd-GvLhjTE2g4FwWVOMbZq9SCQ86z-k").worksheets[0] # TODO - Update for month change; New Month Must Be first sheet
+        
         
         # Gets content of A2 cell.
         @report_date = Date.today - 1
@@ -39,17 +40,30 @@ class PagesController < ApplicationController
         @turn = ws[29,34]
         @turn_budget = ws[29,35]
         
-        @days_passed = @report_date.strftime("%d").to_i
+        days_passed = @report_date.strftime("%d").to_i + 1
         
-        # start_date = Date.today.beginning_of_month
+        start_date = Date.today.beginning_of_month
+        end_date = Date.today.beginning_of_month.next_month
         
+        days_this_month = end_date - start_date
+        
+        @xaxis = []
         
         @nr_actual = []
+        nr_actual_start = 3 # Column
         @nr_budget = []
+        this_months_budget = 479758 # TODO get directly from ws[36,36]
+        per_day_budget = (this_months_budget.to_f/days_this_month.to_f)
         
-        # chart_range.times do |i|
+        days_passed.times do |i|
             
-        # end
+            @xaxis.push(i)
+            
+            @nr_budget.push((i * per_day_budget).to_i)
+            
+            
+            i += 1
+        end
         
         @this_months_birthdays = {}
         
