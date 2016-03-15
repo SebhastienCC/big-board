@@ -60,7 +60,7 @@ class PagesController < ApplicationController
                 
                 birthday_check = Date.strptime(l["birthday"],"%m/%d/%y")
                 
-                if Date.today.strftime("%m") == birthday_check.strftime("%m")
+                if birthday_check.strftime("%m") == Date.today.strftime("%m")
                     @this_months_birthdays[l] = {}
                     @this_months_birthdays[l]["birthday"] = Date.strptime(l["birthday"],"%m/%d/%y")
                     
@@ -69,7 +69,36 @@ class PagesController < ApplicationController
                 
         end
         
+        @multiple_birthdays = false
+        @birthday_today = false
+        @person = []
+        
+        def solo_birthday
+            list = JSON.parse(File.read('birthdays.json'))
+            
+            x = 0
+            
+            list.each do |l|
+                
+                birthday_check = Date.strptime(l["birthday"],"%m/%d/%y")
+                
+                if birthday_check.strftime("%m") == Date.today.strftime("%m") && birthday_check.strftime("%d") == Date.today.strftime("%d")
+                    
+                    @birthday_today = true
+                    @person.push(l)
+                    
+                    x += 1
+                end
+                
+            end
+                
+            if x > 1
+                @multiple_birthdays = true
+            end
+        end
+        
         find_birthdays
+        solo_birthday
         
     end
 end

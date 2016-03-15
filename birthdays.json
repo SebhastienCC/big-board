@@ -1,26 +1,260 @@
 [
-{
+  {
+    "first_name": "Jen",
+    "last_name": "Rudolph",
+    "birthday": "1/29/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/jennifer.jpg"
+  },
+  {
+    "first_name": "Bryan",
+    "last_name": "Traylor",
+    "birthday": "2/2/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/bryan.jpg"
+  },
+  {
+    "first_name": "Dan",
+    "last_name": "Murphy",
+    "birthday": "2/15/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/dan.jpg"
+  },
+  {
+    "first_name": "Torrie",
+    "last_name": "Gold",
+    "birthday": "2/17/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/torrie.jpg"
+  },
+  {
+    "first_name": "Regina",
+    "last_name": "Henise",
+    "birthday": "2/17/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/regina.jpg"
+  },
+  {
+    "first_name": "Andrew",
+    "last_name": "Hughes",
+    "birthday": "2/20/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/andrew.jpg"
+  },
+  {
+    "first_name": "David",
+    "last_name": "Hill",
+    "birthday": "2/25/2016",
+    "image": "http://794d4d309e11ee258865-86029e839b20c2d1f19152b1237ad2a6.r98.cf5.rackcdn.com/daveH.jpg"
+  },
+  {
+    "first_name": "Edwin",
+    "last_name": "Paz",
+    "birthday": "3/4/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/edwin.jpg"
+  },
+  {
+    "first_name": "Will",
+    "last_name": "Compton",
+    "birthday": "3/8/2016",
+    "image": 0
+  },
+  {
     "first_name": "Jason",
     "last_name": "Andrews",
-    "birthday": "03/10/00",
+    "birthday": "3/10/2016",
     "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/jason.jpg"
-},
-{
+  },
+  {
     "first_name": "Sebhastien",
     "last_name": "Gibosse",
-    "birthday": "03/13/00",
+    "birthday": "3/13/2016",
     "image": "http://794d4d309e11ee258865-86029e839b20c2d1f19152b1237ad2a6.r98.cf5.rackcdn.com/sebhastian.jpg"
-},
-{
+  },
+  {
     "first_name": "Margaret",
     "last_name": "Flores",
-    "birthday": "03/31/00",
-    "image":"https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/margaret.jpg"
-},
-{
+    "birthday": "3/31/2016",
+    "image": "http://794d4d309e11ee258865-86029e839b20c2d1f19152b1237ad2a6.r98.cf5.rackcdn.com/margaret.jpg"
+  },
+  {
     "first_name": "Ryan",
     "last_name": "Roberts",
-    "birthday": "04/03/00",
-    "image":"https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/ryan.jpg"
-}
+    "birthday": "4/3/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/ryan.jpg"
+  },
+  {
+    "first_name": "Rich",
+    "last_name": "Knitter",
+    "birthday": "4/4/2016",
+    "image": 0
+  },
+  {
+    "first_name": "Purnimaa",
+    "last_name": "Sethi",
+    "birthday": "4/6/2016",
+    "image": "http://794d4d309e11ee258865-86029e839b20c2d1f19152b1237ad2a6.r98.cf5.rackcdn.com/purnimaa.jpg"
+  },
+  {
+    "first_name": "Chelsea",
+    "last_name": "Jones",
+    "birthday": "4/6/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/chelsea.jpg"
+  },
+  {
+    "first_name": "Matt",
+    "last_name": "Thompson",
+    "birthday": "5/6/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/matt.jpg"
+  },
+  {
+    "first_name": "Keely",
+    "last_name": "Naughton",
+    "birthday": "5/12/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/keely.jpg"
+  },
+  {
+    "first_name": "Jonathan",
+    "last_name": "McWhorter",
+    "birthday": "5/25/2016",
+    "image": "http://794d4d309e11ee258865-86029e839b20c2d1f19152b1237ad2a6.r98.cf5.rackcdn.com/jonathan.jpg"
+  },
+  {
+    "first_name": "Bill",
+    "last_name": "Yates",
+    "birthday": "5/27/2016",
+    "image": 0
+  },
+  {
+    "first_name": "Donna",
+    "last_name": "Heimerich",
+    "birthday": "6/10/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/donna.jpg"
+  },
+  {
+    "first_name": "David",
+    "last_name": "Kochanik",
+    "birthday": "6/17/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/davidK.jpg"
+  },
+  {
+    "first_name": "Brandon",
+    "last_name": "Case",
+    "birthday": "6/18/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/brandon.jpg"
+  },
+  {
+    "first_name": "Yamini",
+    "last_name": "Kagal",
+    "birthday": "7/22/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/yamini.jpg"
+  },
+  {
+    "first_name": "Tim",
+    "last_name": "Carson",
+    "birthday": "6/26/2016",
+    "image": 0
+  },
+  {
+    "first_name": "Travis",
+    "last_name": "Hines",
+    "birthday": "7/30/2016",
+    "image": "http://794d4d309e11ee258865-86029e839b20c2d1f19152b1237ad2a6.r98.cf5.rackcdn.com/travis.jpg"
+  },
+  {
+    "first_name": "Sonya",
+    "last_name": "Myers",
+    "birthday": "8/9/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/sonya.jpg"
+  },
+  {
+    "first_name": "Alicia",
+    "last_name": "Kincheloe",
+    "birthday": "8/28/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/alicia.jpg"
+  },
+  {
+    "first_name": "Nick",
+    "last_name": "Jones",
+    "birthday": "8/29/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/nick.jpg"
+  },
+  {
+    "first_name": "Peter",
+    "last_name": "Wellman",
+    "birthday": "8/29/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/peter.jpg"
+  },
+  {
+    "first_name": "Ashley",
+    "last_name": "Roberts",
+    "birthday": "9/2/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/ashley.jpg"
+  },
+  {
+    "first_name": "Nikki",
+    "last_name": "Davis",
+    "birthday": "9/8/2016",
+    "image": "http://794d4d309e11ee258865-86029e839b20c2d1f19152b1237ad2a6.r98.cf5.rackcdn.com/nikki.jpg"
+  },
+  {
+    "first_name": "Taylor",
+    "last_name": "Dasilva",
+    "birthday": "9/12/2016",
+    "image": "http://794d4d309e11ee258865-86029e839b20c2d1f19152b1237ad2a6.r98.cf5.rackcdn.com/taylor.jpg"
+  },
+  {
+    "first_name": "Julie",
+    "last_name": "Garrett",
+    "birthday": "10/5/2016",
+    "image": 0
+  },
+  {
+    "first_name": "Tyler",
+    "last_name": "Welbron",
+    "birthday": "10/11/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/tyler.jpg"
+  },
+  {
+    "first_name": "Chris",
+    "last_name": "Cuppia",
+    "birthday": "10/29/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/chris.jpg"
+  },
+  {
+    "first_name": "Shanthini",
+    "last_name": "Abeyesundere",
+    "birthday": "11/1/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/shanthini.jpg"
+  },
+  {
+    "first_name": "Becky",
+    "last_name": "Nollner",
+    "birthday": "11/2/2016",
+    "image": "http://794d4d309e11ee258865-86029e839b20c2d1f19152b1237ad2a6.r98.cf5.rackcdn.com/becky.jpg"
+  },
+  {
+    "first_name": "Elizabeth",
+    "last_name": "Day",
+    "birthday": "12/3/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/elizabeth.jpg"
+  },
+  {
+    "first_name": "Kaylen",
+    "last_name": "Cupp",
+    "birthday": "12/6/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/kaylen.jpg"
+  },
+  {
+    "first_name": "Hamilton",
+    "last_name": "Powell",
+    "birthday": "12/10/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/hamilton.jpg"
+  },
+  {
+    "first_name": "Steven",
+    "last_name": "Ho",
+    "birthday": "12/10/2016",
+    "image": "http://794d4d309e11ee258865-86029e839b20c2d1f19152b1237ad2a6.r98.cf5.rackcdn.com/steven.jpg"
+  },
+  {
+    "first_name": "David",
+    "last_name": "Burke",
+    "birthday": "12/25/2016",
+    "image": "https://www.crownandcaliber.com/skin/frontend/rwd/crown/images/employees/davidB.jpg"
+  }
 ]
