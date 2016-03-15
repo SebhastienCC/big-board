@@ -78,7 +78,12 @@ class PagesController < ApplicationController
         @pnr_actual = ['Actual', 0]
         @pnr_budget = ['Budget']
         
-        @now_actual = ['Actual', 0]
+        now_starting = ws[192,2]
+        now_ending = ws[192,36]
+        # Net Additions Per Day
+        napd = (now_ending.to_i - now_starting.to_i) / days_this_month.to_i
+        
+        @now_actual = ['Actual', now_starting ]
         @now_budget = ['Budget']
         
         days_passed.times do |i|
@@ -108,10 +113,12 @@ class PagesController < ApplicationController
             pnr_bal = @pnr_actual[(i + 1)] + ws[190,column].to_i
             @pnr_actual.push(pnr_bal)
             
-            @now_budget.push(now_per_day.to_i * i)
+            now_bal = now_starting.to_i + (napd * i)
+            
+            @now_budget.push(now_bal)
             
             
-            @now_actual.push(ws[191,column].to_i)
+            @now_actual.push(ws[192,column].to_i)
             
             i += 1
         end
