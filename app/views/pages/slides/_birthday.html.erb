@@ -44,7 +44,8 @@
                                     <img alt="image" class="img-circle center-block" src="<%= image_url(b[0]["image"]) %>">
                                 <% end %>
                             </div>
-                            <p class="font-bold"><%= b[0]["birthday"] %></p>
+                            <p class="font-bold"><%= Date.strptime(b[0]["birthday"],"%m/%d/%y").strftime("%B") %> <%= Date.strptime(b[0]["birthday"],"%m/%d/%y").strftime("%d").to_i.ordinalize %> </p>
+                            <!--Date.strptime(b[1]["birthday"],"%m/%d/%y").strftime("%d").to_i.ordinalize-->
                         </div>
                     </div>
             <% end %>
