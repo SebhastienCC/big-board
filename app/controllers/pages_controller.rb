@@ -55,6 +55,32 @@ class PagesController < ApplicationController
         this_months_budget = ws[187,36]
         per_day_budget = (this_months_budget.to_f/days_this_month.to_f)
         
+        np_total_budget = ws[188,36]
+        np_per_day = (np_total_budget.to_f/days_this_month.to_f)
+        
+        npr_total_budget = ws[189,36]
+        npr_per_day = (npr_total_budget.to_f/days_this_month.to_f)
+        
+        pnr_total_budget = ws[190,36]
+        pnr_per_day = (pnr_total_budget.to_f/days_this_month.to_f)
+        
+        now_total_budget = ws[191,36]
+        now_per_day = (now_total_budget.to_f/days_this_month.to_f)
+        
+        @np_actual = ['Actual', 0]
+        @np_budget = ['Budget']
+        
+        @npr_actual = ['Actual', 0]
+        @npr_budget = ['Budget']
+        
+        @dpp =[]
+        
+        @pnr_actual = ['Actual', 0]
+        @pnr_budget = ['Budget']
+        
+        @now_actual = ['Actual', 0]
+        @now_budget = ['Budget']
+        
         days_passed.times do |i|
             
             @xaxis.push(i)
@@ -65,8 +91,35 @@ class PagesController < ApplicationController
             balance = @nr_actual[i] + ws[187,column].to_i
             @nr_actual.push(balance)
             
+            @np_budget.push(np_per_day.to_i * i)
+            
+            np_bal = @np_actual[(i + 1)] + ws[188,column].to_i
+            @np_actual.push(np_bal)
+            
+            @npr_budget.push(npr_per_day.to_i * i)
+            
+            npr_bal = @npr_actual[(i + 1)] + ws[189,column].to_i
+            @npr_actual.push(npr_bal)
+            
+            @dpp.push(ws[170,column].to_i)
+            
+            @pnr_budget.push(npr_per_day.to_i * i)
+            
+            pnr_bal = @pnr_actual[(i + 1)] + ws[190,column].to_i
+            @pnr_actual.push(pnr_bal)
+            
+            @now_budget.push(now_per_day.to_i * i)
+            
+            
+            @now_actual.push(ws[191,column].to_i)
+            
             i += 1
         end
+        @np_actual.pop
+        @npr_actual.pop
+        @dpp.pop
+        @pnr_actual.pop
+        @now_actual.pop
         
         @this_months_birthdays = {}
         

@@ -9,7 +9,6 @@
                     <div class="col-md-4 col-md-offset-4">
                         <h4 class="text-center m">
                             <%= @report_date.strftime("As of: %m/%d/%Y") %>
-                            
                         </h4>
                     </div>
                     <div class="col-md-4">
@@ -276,8 +275,8 @@ $(function() {
         bindto: '#slineChart',
         data:{
             columns: [
-                ['Actual', 0, 7527, 22471, 38854, 51382, 54200, 56791, 65230, 70274, 72839],
-                ['Budget', 0, 5529, 11059, 16588, 22117, 27647, 33176, 38705, 44235, 49764]
+                <%= raw @npr_actual %>,
+                <%= raw @npr_budget %>
             ],
             colors:{
                 Actual: '#ff5a00',
@@ -299,8 +298,8 @@ $(function() {
         bindto: '#slineChart2',
         data:{
             columns: [
-                ['Actual', 0, 5080, 15036, 19108, 24885, 24885, 24885, 36372, 45005, 50944],
-                ['Budget', 0, 12255, 24510, 36765, 49020, 61275, 73530, 85785, 98039, 110294]
+                <%= raw @np_actual %>,
+                <%= raw @np_budget %>
             ],
             colors:{
                 Actual: '#ff5a00',
@@ -337,7 +336,7 @@ $(function() {
         }
     });
     
-    $("#sparkline1").sparkline([11, 13, 10, 13, 0, 0, 11,15,14], {
+    $("#sparkline1").sparkline(<%= raw @dpp %>, {
         type: 'line',
         width: '100%',
         height: '60',
@@ -351,8 +350,8 @@ $(function() {
         bindto: '#slineChart3',
         data:{
             columns: [
-                ['Actual', 0, 8,	417,	4079,	6866,	8193,	9479,	10588, 11138, 13958],
-                ['Budget', 0, 9947,	19893,	29840,	39787,	49734,	59680,	69627, 79576, 89523]
+                <%= raw @pnr_actual %>,
+                <%= raw @pnr_budget %>
             ],
             colors:{
                 Actual: '#ff5a00',
@@ -374,8 +373,8 @@ $(function() {
         bindto: '#slineChart4',
         data:{
             columns: [
-                ['Actual', 3956, 4007 ,3981, 3955, 3948, 3969, 3947, 3934, 4051, 4126],
-                ['Budget', 3956, 4163 ,4371 ,4578, 4786, 4993, 5201, 5408, 5612, 5819]
+                <%= raw @now_actual %>,
+                <%= raw @now_budget %>
             ],
             colors:{
                 Actual: '#ff5a00',
