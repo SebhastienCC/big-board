@@ -49,10 +49,10 @@ class PagesController < ApplicationController
         
         @xaxis = []
         
-        @nr_actual = []
+        @nr_actual = [0]
         nr_actual_start = 3 # Column
         @nr_budget = []
-        this_months_budget = 479758 # TODO get directly from ws[36,36]
+        this_months_budget = ws[187,36]
         per_day_budget = (this_months_budget.to_f/days_this_month.to_f)
         
         days_passed.times do |i|
@@ -61,6 +61,9 @@ class PagesController < ApplicationController
             
             @nr_budget.push((i * per_day_budget).to_i)
             
+            column = nr_actual_start + i
+            balance = @nr_actual[i] + ws[187,column].to_i
+            @nr_actual.push(balance)
             
             i += 1
         end

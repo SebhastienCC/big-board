@@ -9,7 +9,7 @@
                     <div class="col-md-4 col-md-offset-4">
                         <h4 class="text-center m">
                             <%= @report_date.strftime("As of: %m/%d/%Y") %>
-                            <!--< %= @xaxis %>-->
+                            
                         </h4>
                     </div>
                     <div class="col-md-4">
@@ -175,7 +175,7 @@ $(function() {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(26,179,148,1)",
-                data: [0,7535, 22888, 42933, 58248, 62393, 66270, 75818, 81412, 86797]
+                data: <%= @nr_actual %>
             }
         ]
     };
