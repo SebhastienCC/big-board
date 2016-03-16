@@ -122,6 +122,7 @@ class PagesController < ApplicationController
             
             i += 1
         end
+        @nr_actual.pop
         @np_actual.pop
         @npr_actual.pop
         @dpp.pop
