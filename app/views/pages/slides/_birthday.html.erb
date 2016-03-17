@@ -40,8 +40,10 @@
                             <div class="m-b-sm">
                                 <% if b[0]["image"] == 0 %>
                                     <img alt="image" class="img-circle center-block" src="<%= image_path('blank_profile.jpg') %>">
-                                <% else %>
+                                <% elsif b[0]["image"].include? "http"  %>
                                     <img alt="image" class="img-circle center-block" src="<%= image_url(b[0]["image"]) %>">
+                                <% else %>
+                                    <img alt="image" class="img-circle center-block" src="<%= image_path(b[0]["image"]) %>">
                                 <% end %>
                             </div>
                             <p class="font-bold"><%= Date.strptime(b[0]["birthday"],"%m/%d/%y").strftime("%B") %> <%= Date.strptime(b[0]["birthday"],"%m/%d/%y").strftime("%d").to_i.ordinalize %> </p>
