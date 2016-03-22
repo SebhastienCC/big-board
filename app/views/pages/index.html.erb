@@ -2,130 +2,102 @@
     <a href="/" class="col-lg-4 col-lg-offset-4"><img src="<%= image_path 'logo.png'%>"></img></a>
     <!--<h1 class="text-center m">Crown & Caliber | Big Board</h1>-->
 </div>
-<!--<div class="wrapper wrapper-content">-->
-    <!--<div class="row">-->
-        <!--<div class="col-lg-10 col-lg-offset-1">-->
-            <div>
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-4">
-                        <h4 class="text-center m">
-                            <%= @report_date.strftime("As of: %m/%d/%Y") %>
-                        </h4>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="text-right">
-                            <!--< %= link_to 'Log Out', class: 'text-primary', destroy_user_session_path, :method => :delete %>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="slick_slider">
-                    <div>
-                        <div class="ibox-content">
-                           <%= render 'pages/slides/general_info'%> 
-                        </div>
-                    </div>
-                    <!--<div>-->
-                    <!--    <div class="ibox-content">-->
-                    
-                    <!--    </div>-->
-                    <!--</div>-->
-                    <div>
-                        <div class="ibox-content">
-                            <%= render 'pages/slides/marketing' %>
-                        </div>
-                    </div>
-                    <!--<div>-->
-                    <!--    <div class="ibox-content">-->
-                    <!--        <h2>Emails</h2>-->
-                    <!--        <p>-->
-                    <!--            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem-->
-                    <!--            Ipsum has been the industry's standard dummy text ever since the 1500s, when an-->
-                    <!--            unknown printer took a galley of type and scrambled it to make a type specimen-->
-                    <!--            book. It has survived not only five centuries, but also the leap.-->
-                    <!--        </p>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-                    <div>
-                        <div class="ibox-content">
-                            <%= render 'pages/slides/procurement' %>
-                        </div>
-                    </div>
-                    <!--<div>-->
-                    <!--    <div class="ibox-content">-->
-                    <!--        <h2>Operations</h2>-->
-                    <!--        <p>-->
-                    <!--            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem-->
-                    <!--            Ipsum has been the industry's standard dummy text ever since the 1500s, when an-->
-                    <!--            unknown printer took a galley of type and scrambled it to make a type specimen-->
-                    <!--            book. It has survived not only five centuries, but also the leap.-->
-                    <!--        </p>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-                    <div>
-                        <div class="ibox-content">
-                            <%= render 'pages/slides/partner'%>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="ibox-content">
-                            <%= render 'pages/slides/birthday'%>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="ibox-content">
-                            <%= render 'pages/slides/new_york_office'%>
-                        </div>
-                    </div>
-                    <!--<div>-->
-                    <!--    <div class="ibox-content">-->
-                    <!--        <h2>This Month's Birthdays and Anniversaries</h2>-->
-                    <!--        <p>-->
-                    <!--            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem-->
-                    <!--            Ipsum has been the industry's standard dummy text ever since the 1500s, when an-->
-                    <!--            unknown printer took a galley of type and scrambled it to make a type specimen-->
-                    <!--            book. It has survived not only five centuries, but also the leap.-->
-                    <!--        </p>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-                    <!--<div>-->
-                    <!--    <div class="ibox-content">-->
-                    <!--        <h2>Instagram</h2>-->
-                    <!--        <p>-->
-                    <!--            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem-->
-                    <!--            Ipsum has been the industry's standard dummy text ever since the 1500s, when an-->
-                    <!--            unknown printer took a galley of type and scrambled it to make a type specimen-->
-                    <!--            book. It has survived not only five centuries, but also the leap.-->
-                    <!--        </p>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-                    <!--<div>-->
-                    <!--    <div class="ibox-content">-->
-                    <!--        <h2>Twitter</h2>-->
-                    <!--        <p>-->
-                    <!--            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem-->
-                    <!--            Ipsum has been the industry's standard dummy text ever since the 1500s, when an-->
-                    <!--            unknown printer took a galley of type and scrambled it to make a type specimen-->
-                    <!--            book. It has survived not only five centuries, but also the leap.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem-->
-                    <!--            Ipsum has been the industry's standard dummy text ever since the 1500s, when an-->
-                    <!--            unknown printer took a galley of type and scrambled it to make a type specimen-->
-                    <!--            book. It has survived not only five centuries, but also the leap.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem-->
-                    <!--            Ipsum has been the industry's standard dummy text ever since the 1500s, when an-->
-                    <!--            unknown printer took a galley of type and scrambled it to make a type specimen-->
-                    <!--            book. It has survived not only five centuries, but also the leap.-->
-                    <!--        </p>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-                </div>
-        <!--    </div>-->
-        <!--</div>-->
-    <!--</div>-->
+<div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <h4 class="text-center m">
+                <%= @report_date.strftime("As of: %m/%d/%Y") %>
+            </h4>
+        </div>
+        <div class="col-md-4">
+            <div class="text-right">
+                <!--< %= link_to 'Log Out', class: 'text-primary', destroy_user_session_path, :method => :delete %>-->
+            </div>
+        </div>
+    </div>
+    <div class="slick_slider">
+        <div>
+            <div class="ibox-content">
+               <%= render 'pages/slides/general_info'%> 
+            </div>
+        </div>
+        <div>
+            <div class="ibox-content">
+                <%= render 'pages/slides/marketing' %>
+            </div>
+        </div>
+        <div>
+            <div class="ibox-content">
+                <%= render 'pages/slides/procurement' %>
+            </div>
+        </div>
+        <div>
+            <div class="ibox-content">
+                <%= render 'pages/slides/partner'%>
+            </div>
+        </div>
+        <div>
+            <div class="ibox-content">
+                <%= render 'pages/slides/birthday'%>
+            </div>
+        </div>
+        <div>
+            <div class="ibox-content">
+                <%= render 'pages/slides/new_york_office'%>
+            </div>
+        </div>
+        <div>
+            <div class="ibox-content">
+                <%= render 'pages/slides/tweets'%>
+            </div>
+        </div>
+    </div>
 </div>
 
 <% content_for :javascript do %>
 
 <script>
 
+
+
+
+
+// myIframe.addEventListener("load", onLoad);
+window.onload = function () {
+    var myIframe = document.getElementById('twitter-widget-1');
+    var innerDoc = myIframe.contentDocument || myIframe.contentWindow.document;
+    var list = innerDoc.getElementsByClassName('timeline-TweetList-tweet');
+    var i = 0 
+    
+    function timeout() {
+        setTimeout(function () {
+            if (myIframe.parentElement.parentElement === document.getElementsByClassName('slick-current')[0]) {
+                item = list[i];
+                i += 1;
+                if (i === list.length){
+                    i = 0;
+                }
+                item.scrollIntoView();
+            }
+            timeout();
+        }, 2500);
+    }
+    
+    timeout();
+
+}
 $(function() {
+    
+    !function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+        if(!d.getElementById(id)){
+        	js=d.createElement(s);
+        	js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+        	fjs.parentNode.insertBefore(js,fjs);
+        }
+    }
+    (document,"script","twitter-wjs");
+
     
     function refreshAt(hours, minutes, seconds) {
         var now = new Date();
@@ -149,7 +121,7 @@ $(function() {
     refreshAt(15,00,0);
     refreshAt(16,00,0);
     refreshAt(17,30,0);
-
+        
     $('.slick_slider').slick({
         dots: true,
         autoplay: true,
@@ -399,7 +371,7 @@ $(function() {
           }
         }
     });
-
+    
 });
 
 </script>

@@ -178,5 +178,18 @@ class PagesController < ApplicationController
         find_birthdays
         solo_birthday
         
+        client = Twitter::REST::Client.new do |config|
+          config.consumer_key        = "CY4Q3aKv9XIXa1907twfp1mTH"
+          config.consumer_secret     = "HyytlSzbTUFQh5g28ojTPfBG3pQXlpxTOOyh6WaULdbREF361o"
+          config.access_token        = "707566377184468992-6baHBFql0yfe4cNVSbXVM3uIgdlxnHX"
+          config.access_token_secret = "a79NLgg8nwv3dJZaf09X2oDGkwRgcskTRslbFl8zgUzvh"
+        end
+        
+        @cctwitter = client.user("crownandcaliber")
+        
+        @tweets = client.user_timeline("crownandcaliber")
+            
+            
+        
     end
 end

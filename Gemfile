@@ -19,6 +19,8 @@ gem 'devise', '~> 3.5', '>= 3.5.6'
 
 gem 'rollbar', '~> 2.7.1'
 
+gem 'twitter'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
