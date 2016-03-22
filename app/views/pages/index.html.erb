@@ -67,17 +67,19 @@ window.onload = function () {
     var myIframe = document.getElementById('twitter-widget-1');
     var innerDoc = myIframe.contentDocument || myIframe.contentWindow.document;
     var list = innerDoc.getElementsByClassName('timeline-TweetList-tweet');
-    var i = 0 
+    var i = 0; 
     
     function timeout() {
         setTimeout(function () {
-            if (myIframe.parentElement.parentElement === document.getElementsByClassName('slick-current')[0]) {
+            if (myIframe.parentElement.parentElement.parentElement === document.getElementsByClassName('slick-current')[0]) {
                 item = list[i];
                 i += 1;
                 if (i === list.length){
                     i = 0;
                 }
+                
                 item.scrollIntoView();
+                console.log('tick')
             }
             timeout();
         }, 2500);

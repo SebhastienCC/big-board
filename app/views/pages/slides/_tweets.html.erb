@@ -1,1 +1,46 @@
-<a class="twitter-timeline" id="twitter-feed" href="https://twitter.com/crownandcaliber" data-widget-id="712017024671739904">Tweets by @crownandcaliber</a>
+<div class="col-lg-6">
+    <a class="twitter-timeline" id="twitter-feed" data-chrome="nofooter noborders noheader noscrollbar transparent" href="https://twitter.com/crownandcaliber" data-widget-id="712017024671739904">Tweets by @crownandcaliber</a>
+</div>
+<div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Profile</h5>
+            </div>
+            <div>
+                <div class="ibox-content no-padding border-left-right">
+                    <div class="col-lg-2"></div><img alt="image" class="img-responsive" src="<%= image_path('bv5hfhqo.jpg') %>">
+                </div>
+                <div class="ibox-content profile-content">
+                    <h4><strong>@CrownandCaliber</strong></h4>
+                    <p><i class="fa fa-map-marker"></i> Atlanta, GA</p>
+                    <h5>
+                        About me
+                    </h5>
+                    <p>
+                        <%= @cctwitter.description %>
+                    </p>
+                    <div class="row m-t-lg">
+                        <div class="col-md-4">
+                            <h5><strong><%= number_with_delimiter(@cctwitter.statuses_count) %></strong> Posts</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h5><strong><%= number_with_delimiter(@cctwitter.friends_count) %></strong> Following</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h5><strong><%= number_with_delimiter(@cctwitter.followers_count) %></strong> Followers</h5>
+                        </div>
+                    </div>
+                    <!--<div class="user-button">-->
+                    <!--    <div class="row">-->
+                    <!--        <div class="col-md-6">-->
+                    <!--            <button type="button" class="btn btn-primary btn-sm btn-block"><i class="fa fa-envelope"></i> Send Message</button>-->
+                    <!--        </div>-->
+                    <!--        <div class="col-md-6">-->
+                    <!--            <button type="button" class="btn btn-default btn-sm btn-block"><i class="fa fa-coffee"></i> Buy a coffee</button>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+</div>
