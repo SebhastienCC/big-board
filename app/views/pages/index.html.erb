@@ -41,11 +41,11 @@
                 <%= render 'pages/slides/birthday'%>
             </div>
         </div>
-        <div>
-            <div class="ibox-content">
-                <%= render 'pages/slides/new_york_office'%>
-            </div>
-        </div>
+        <!--<div>-->
+        <!--    <div class="ibox-content">-->
+        <!--        < %= render 'pages/slides/new_york_office'%>-->
+        <!--    </div>-->
+        <!--</div>-->
         <div>
             <div class="ibox-content">
                 <%= render 'pages/slides/tweets'%>
@@ -79,7 +79,6 @@ window.onload = function () {
                 }
                 
                 item.scrollIntoView();
-                console.log('tick')
             }
             timeout();
         }, 5000);

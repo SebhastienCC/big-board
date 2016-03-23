@@ -19,6 +19,7 @@ gem 'devise', '~> 3.5', '>= 3.5.6'
 
 gem 'rollbar', '~> 2.7.1'
 
+gem 'instafeed'
 gem 'twitter'
 
 # Use jquery as the JavaScript library
