@@ -46,11 +46,16 @@
         <!--        < %= render 'pages/slides/new_york_office'%>-->
         <!--    </div>-->
         <!--</div>-->
-        <div>
-            <div class="ibox-content">
-                <%= render 'pages/slides/tweets'%>
-            </div>
-        </div>
+        <!--<div>-->
+        <!--    <div class="ibox-content">-->
+        <!--        < %= render 'pages/slides/tweets'%>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!--<div>-->
+        <!--    <div class="ibox-content">-->
+        <!--        < %= render 'pages/slides/insta'%>-->
+        <!--    </div>-->
+        <!--</div>-->
     </div>
 </div>
 
@@ -63,41 +68,53 @@
 
 
 // myIframe.addEventListener("load", onLoad);
-window.onload = function () {
-    var myIframe = document.getElementById('twitter-widget-1');
-    var innerDoc = myIframe.contentDocument || myIframe.contentWindow.document;
-    var list = innerDoc.getElementsByClassName('timeline-TweetList-tweet');
-    var i = 0; 
+// window.onload = function () {
+//     var myIframe = document.getElementById('twitter-widget-1');
+//     var innerDoc = myIframe.contentDocument || myIframe.contentWindow.document;
+//     var list = innerDoc.getElementsByClassName('timeline-TweetList-tweet');
+//     var i = 0; 
     
-    function timeout() {
-        setTimeout(function () {
-            if (myIframe.parentElement.parentElement.parentElement === document.getElementsByClassName('slick-current')[0]) {
-                item = list[i];
-                i += 1;
-                if (i === list.length){
-                    i = 0;
-                }
+//     function timeout() {
+//         setTimeout(function () {
+//             if (myIframe.parentElement.parentElement.parentElement === document.getElementsByClassName('slick-current')[0]) {
+//                 item = list[i];
+//                 i += 1;
+//                 if (i === list.length){
+//                     i = 0;
+//                 }
                 
-                item.scrollIntoView();
-            }
-            timeout();
-        }, 5000);
-    }
+//                 item.scrollIntoView();
+//             }
+//             timeout();
+//         }, 5000);
+//     }
     
-    timeout();
+//     timeout();
+    
+    
+    
 
-}
+// }
 $(function() {
     
-    !function(d,s,id){
-        var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-        if(!d.getElementById(id)){
-        	js=d.createElement(s);
-        	js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
-        	fjs.parentNode.insertBefore(js,fjs);
-        }
-    }
-    (document,"script","twitter-wjs");
+    // !function(d,s,id){
+    //     var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+    //     if(!d.getElementById(id)){
+    //     	js=d.createElement(s);
+    //     	js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+    //     	fjs.parentNode.insertBefore(js,fjs);
+    //     }
+    // }
+    // (document,"script","twitter-wjs");
+    
+    // var feed = new Instafeed({
+    //     get: 'tagged',
+    //     tagName: 'watch',
+    //     clientId: '< %= ENV["INSTAGRAM_CLIENT_ID"] %>',
+    //     template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
+    // });
+    
+    // feed.run();
 
     
     function refreshAt(hours, minutes, seconds) {
@@ -116,12 +133,15 @@ $(function() {
         var timeout = (then.getTime() - now.getTime());
         setTimeout(function() { window.location.reload(true); }, timeout);
     };
-    
+        
     refreshAt(10,00,0);
+    refreshAt(11,00,0);
     refreshAt(12,00,0);
+    refreshAt(13,00,0);
+    refreshAt(14,00,0);
     refreshAt(15,00,0);
     refreshAt(16,00,0);
-    refreshAt(17,30,0);
+    refreshAt(17,00,0);
         
     $('.slick_slider').slick({
         dots: true,

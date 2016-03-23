@@ -20,3 +20,4 @@
 //= require gallery.js
 //= require dashboards.js
 //= require graphs.js
+//= require instafeed

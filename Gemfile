@@ -19,6 +19,8 @@ gem 'devise', '~> 3.5', '>= 3.5.6'
 
 gem 'rollbar', '~> 2.7.1'
 
+gem "figaro"
+
 gem 'instafeed'
 gem 'twitter'
 
