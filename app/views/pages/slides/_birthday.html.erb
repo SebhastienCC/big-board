@@ -27,7 +27,13 @@
                 <small><%= Date.strptime(@person[0]["birthday"],"%m/%d/%y").strftime("%B") %> <%= Date.strptime(@person[0]["birthday"],"%m/%d/%y").strftime("%d").to_i.ordinalize %></small>
             </div>
             <div class="col-lg-4 col-lg-offset-4">
-                <img src="<%= image_url(@person[0]["image"]) %>" class="img-circle circle-border m-b-md center-block" alt="profile">
+                <% if @person[0]["image"] == 0 %>
+                    <img alt="image" class="img-circle center-block" src="<%= image_path('blank_profile.jpg') %>">
+                <% elsif @person[0]["image"].include? "http"  %>
+                    <img alt="image" class="img-circle center-block" src="<%= image_url(@person[0]["image"]) %>">
+                <% else %>
+                    <img alt="image" class="img-circle center-block" src="<%= image_path(@person[0]["image"]) %>">
+                <% end %>
             </div>
         </div>
     <% else %>

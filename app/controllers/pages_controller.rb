@@ -11,34 +11,34 @@ class PagesController < ApplicationController
         # List of queries
         
         # Marketing
-        @emails = ws[97,34]
-        @emails_budget = ws[97,35]
+        @emails = ws[97,33]
+        @emails_budget = ws[97,34]
         
-        @cpa = ws[132,34]
-        @cpa_budget = ws[132,35]
+        @cpa = ws[132,33]
+        @cpa_budget = ws[132,34]
         
-        @net = ws[36,34]
-        @net_budget = ws[36,35]
+        @net = ws[36,33]
+        @net_budget = ws[36,34]
         
-        @sessions = ws[110,34]
-        @sessions_budget = ws[110,35]
+        @sessions = ws[110,33]
+        @sessions_budget = ws[110,34]
         
-        @unique = ws[74,34]
-        @unique_budget = ws[74,35]
+        @unique = ws[74,33]
+        @unique_budget = ws[74,34]
         
-        @rate = ws[80,34]
-        @rate_budget = ws[80,35]
+        @rate = ws[80,33]
+        @rate_budget = ws[80,34]
         
         # Procurement
-        @win_rate = ws[163,34].to_f
-        @win_rate_budget = ws[163,35]
+        @win_rate = ws[163,33].to_f
+        @win_rate_budget = ws[163,34]
         
-        @delivery = ws[170,34]
-        @delivery_budget = ws[170,35]
+        @delivery = ws[170,33]
+        @delivery_budget = ws[170,34]
         
         # Partner
-        @turn = ws[29,34]
-        @turn_budget = ws[29,35]
+        @turn = ws[29,33]
+        @turn_budget = ws[29,34]
         
         days_passed = @report_date.strftime("%d").to_i + 1
         
