@@ -17,17 +17,17 @@ class PagesController < ApplicationController
         @cpa = ws[132,33]
         @cpa_budget = ws[132,34]
         
-        @net = ws[36,33]
-        @net_budget = ws[36,34]
+        @net = ws[37,33]
+        @net_budget = ws[37,34]
         
         @sessions = ws[110,33]
         @sessions_budget = ws[110,34]
         
-        @unique = ws[74,33]
-        @unique_budget = ws[74,34]
+        @unique = ws[75,33]
+        @unique_budget = ws[75,34]
         
-        @rate = ws[80,33]
-        @rate_budget = ws[80,34]
+        @rate = ws[81,33]
+        @rate_budget = ws[81,34]
         
         # Procurement
         @win_rate = ws[163,33].to_f
@@ -37,8 +37,8 @@ class PagesController < ApplicationController
         @delivery_budget = ws[170,34]
         
         # Partner
-        @turn = ws[29,33]
-        @turn_budget = ws[29,34]
+        @turn = ws[30,33]
+        @turn_budget = ws[30,34]
         
         days_passed = @report_date.strftime("%d").to_i + 1
         
