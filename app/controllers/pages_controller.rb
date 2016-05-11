@@ -6,46 +6,50 @@ class PagesController < ApplicationController
         ws = session.spreadsheet_by_key("1S-eHfucFkQZGqd-GvLhjTE2g4FwWVOMbZq9SCQ86z-k").worksheets[0] # TODO - Update for month change; New Month Must Be first sheet
         
         
+        
         # Gets content of A2 cell.
         @report_date = Date.today - 1
-        # List of queries
         
-        # Marketing
-        @emails = ws[97,33]
-        @emails_budget = ws[97,34]
-        
-        @cpa = ws[132,33]
-        @cpa_budget = ws[132,34]
-        
-        @net = ws[37,33]
-        @net_budget = ws[37,34]
-        
-        @sessions = ws[110,33]
-        @sessions_budget = ws[110,34]
-        
-        @unique = ws[75,33]
-        @unique_budget = ws[75,34]
-        
-        @rate = ws[81,33]
-        @rate_budget = ws[81,34]
-        
-        # Procurement
-        @win_rate = ws[163,33].to_f
-        @win_rate_budget = ws[163,34]
-        
-        @delivery = ws[170,33]
-        @delivery_budget = ws[170,34]
-        
-        # Partner
-        @turn = ws[30,33]
-        @turn_budget = ws[30,34]
-        
-        days_passed = @report_date.strftime("%d").to_i + 1
-        
-        start_date = Date.today.beginning_of_month
-        end_date = Date.today.beginning_of_month.next_month
+        start_date = @report_date.beginning_of_month
+        end_date = @report_date.beginning_of_month.next_month
         
         days_this_month = end_date - start_date
+        
+        days_passed = @report_date.strftime("%d").to_i + 1
+        # List of queries
+        
+        actual_row = (days_this_month + 3).to_i
+        budget_row = actual_row + 1
+        
+        # Marketing
+        @emails = ws[97,actual_row]
+        @emails_budget = ws[97,budget_row]
+        
+        @cpa = ws[132,actual_row]
+        @cpa_budget = ws[132,budget_row]
+        
+        @net = ws[37,actual_row]
+        @net_budget = ws[37,budget_row]
+        
+        @sessions = ws[110,actual_row]
+        @sessions_budget = ws[110,budget_row]
+        
+        @unique = ws[75,actual_row]
+        @unique_budget = ws[75,budget_row]
+        
+        @rate = ws[81,actual_row]
+        @rate_budget = ws[81,budget_row]
+        
+        # Procurement
+        @win_rate = ws[163,actual_row].to_f
+        @win_rate_budget = ws[163,budget_row]
+        
+        @delivery = ws[170,actual_row]
+        @delivery_budget = ws[170,budget_row]
+        
+        # Partner
+        @turn = ws[30,actual_row]
+        @turn_budget = ws[30,budget_row]
         
         @xaxis = []
         
