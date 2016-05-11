@@ -90,6 +90,9 @@ class PagesController < ApplicationController
         @now_actual = ['Actual', now_starting ]
         @now_budget = ['Budget']
         
+        
+        dow = start_date.strftime("%u").to_i
+        
         days_passed.times do |i|
             
             @xaxis.push(i)
@@ -110,7 +113,9 @@ class PagesController < ApplicationController
             npr_bal = @npr_actual[(i + 1)] + ws[189,column].to_i
             @npr_actual.push(npr_bal)
             
-            @dpp.push(ws[170,column].to_i)
+            if dow != 6 && dow != 7
+                @dpp.push(ws[170,column].to_i)
+            end
             
             @pnr_budget.push(npr_per_day.to_i * i)
             
@@ -125,6 +130,11 @@ class PagesController < ApplicationController
             @now_actual.push(ws[192,column].to_i)
             
             i += 1
+            if dow == 7
+                dow = 1
+            else
+                dow += 1
+            end
         end
         @nr_actual.pop
         @np_actual.pop
